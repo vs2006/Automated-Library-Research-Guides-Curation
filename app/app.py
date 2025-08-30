@@ -164,8 +164,8 @@ def get_articles(topic: str):
 def get_koha_isbns():
 
     koha_url = "http://localhost:8000/api/v1"
-    username = "circulation"
-    password = "circulation"
+    username = "abc"
+    password = "abc"
 
     headers = {
         "Content-Type": "application/json",
