@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library Guides</title>
+        <style>
+            body {
+                background-color: #f4f6f8;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding-top: 100px;
+            }
+            form {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+                display: inline-block;
+                margin: 20px;
+            }
+            input[type="text"] {
+                width: 250px;
+                padding: 12px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                font-size: 16px;
+                margin-right: 10px;
+            }
+            button {
+                padding: 12px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007BFF;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/articles", method="get">
+            <input autocomplete="off" autofocus name="topic" placeholder="Topic for Articles" type="text">
+            <button type="submit">Submit</button>
+        </form>
+        <br><br><br>
+        <form action="/books", method="get">
+            <input autocomplete="off" autofocus name="topic" placeholder="Topic for Books" type="text">
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
